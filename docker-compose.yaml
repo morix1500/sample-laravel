@@ -35,3 +35,7 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=pass
       - MYSQL_DATABASE=task
+  redis:
+    image: redis:5.0-alpine
+    ports:
+      - "6379:6379"
